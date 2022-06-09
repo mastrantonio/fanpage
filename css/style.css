@@ -1,3 +1,281 @@
+main table {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+}
+main table .coluno {
+  background-image: linear-gradient(to right, rgb(7, 11, 27), rgb(48, 53, 58));
+}
+main table .coldos {
+  background-color: rgb(48, 53, 58);
+}
+main table .coltres {
+  background-image: linear-gradient(to left, rgb(7, 11, 27), rgb(48, 53, 58));
+}
+main table tr th {
+  border: 5px solid black;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  font-size: large;
+}
+main table tr td {
+  border: 5px solid black;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  font-size: large;
+}
+main section #sectionrec {
+  margin: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main section #video {
+  justify-content: center;
+  width: 800px;
+}
+main section #img {
+  text-align: center;
+}
+main section h3 {
+  text-align: center;
+}
 
+@media screen and (max-width: 768px) {
+  #video {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #video {
+    width: 400px;
+  }
+}
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 5px 10px;
+}
+
+nav {
+  border: solid black 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.lista {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 5px 10px;
+  color: rgb(224, 224, 224);
+}
+
+.liscale:hover {
+  transform: scale(1.5, 1.5);
+}
+
+body {
+  background-image: url(https://altovolumen.com/wp-content/uploads/2020/05/mejorando-tu-estudio-casero-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px 10px;
+  border: solid black 5px;
+  padding: 10px;
+  margin: 30px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.footer {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0px 5px;
+}
+
+.footer:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.huno {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0 0 0;
+  color: white;
+}
+
+.hdos {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.htres {
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .hdos {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hdos {
+    font-size: 27px;
+  }
+}
+/* .......................................................................index......................................................... */
+#parrafoindex {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  padding: 25px;
+  justify-content: center;
+  text-align: center;
+}
+
+#sectionindex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#divuno {
+  text-align: center;
+  list-style-type: none;
+}
+
+#divdos {
+  text-align: center;
+}
+
+.ulindex {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.ulindex li a {
+  text-decoration: none;
+  color: rgb(55, 158, 255);
+}
+
+#imgdos {
+  display: none;
+}
+
+.links:hover {
+  color: rgb(0, 255, 255);
+}
+
+.lilinks:hover {
+  transform: scale(1.5, 1.5);
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    display: initial;
+  }
+
+  #parrafoindex {
+    padding: 10px 25px 10px 25px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  #imgdos {
+    display: initial;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    display: initial;
+  }
+}
+.listamusica {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#mainmusica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.olmusica {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.album {
+  padding: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #divmusica {
+    grid-area: divuno;
+  }
+
+  #divmusicados {
+    grid-area: divdos;
+  }
+
+  #mainmusica {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: " divdos divuno";
+  }
+}
+@media screen and (max-width: 480px) {
+  #divmusica {
+    grid-area: divuno;
+  }
+
+  #divmusicados {
+    grid-area: divdos;
+  }
+
+  #mainmusica {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "divuno" "divdos";
+    height: 3100px;
+  }
+}
+/* ......................................................................galeria............................................................................ */
+.divgaleria {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */
