@@ -294,5 +294,13 @@
     "yargs": "^17.5.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastrantonio/fanpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mastrantonio/fanpage/issues"
+  },
+  "homepage": "https://github.com/mastrantonio/fanpage#readme",
   "description": ""
 }
