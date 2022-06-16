@@ -115,11 +115,36 @@ footer {
 
 .huno {
   text-align: center;
-  font-size: 50px;
+  font-size: 100px;
   margin: 20px 0 0 0;
   color: white;
+  color: hsla(0deg, 0%, 0%, 0.9);
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
 }
 
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsl(180deg, 100%, 50%), -3px -3px 0 hsl(180deg, 100%, 50%), -2px -2px 0 hsl(180deg, 100%, 50%), -1px -1px 0 hsl(180deg, 100%, 50%), 4px 4px 0 hsl(0deg, 100%, 50%), 3px 3px 0 hsl(0deg, 100%, 50%), 2px 2px 0 hsl(0deg, 100%, 50%), 1px 1px 0 hsl(0deg, 100%, 50%);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsl(0deg, 100%, 50%), -3px 3px 0 hsl(0deg, 100%, 50%), -2px 2px 0 hsl(0deg, 100%, 50%), -1px 1px 0 hsl(0deg, 100%, 50%), 4px -4px 0 hsl(180deg, 100%, 50%), 3px -3px 0 hsl(180deg, 100%, 50%), 2px -2px 0 hsl(180deg, 100%, 50%), 1px -1px 0 hsl(180deg, 100%, 50%);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsl(180deg, 100%, 50%), 3px 3px 0 hsl(180deg, 100%, 50%), 2px 2px 0 hsl(180deg, 100%, 50%), 1px 1px 0 hsl(180deg, 100%, 50%), -4px -4px 0 hsl(0deg, 100%, 50%), -3px -3px 0 hsl(0deg, 100%, 50%), -2px -2px 0 hsl(0deg, 100%, 50%), -1px -1px 0 hsl(0deg, 100%, 50%);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
+  }
+}
 .hdos {
   color: white;
   font-size: 30px;
@@ -151,6 +176,10 @@ footer {
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: rgba(0, 0, 0, 0.445);
+  border: solid black 5px;
 }
 
 .img {
@@ -163,6 +192,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.445);
+  border: solid black 5px;
+  margin-left: 600px;
+  margin-right: 600px;
 }
 
 #divuno {
