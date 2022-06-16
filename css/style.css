@@ -1,3 +1,8 @@
+.listamusica, #divuno {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 main table {
   display: flex;
   justify-content: center;
@@ -114,10 +119,8 @@ footer {
 }
 
 .huno {
-  text-align: center;
   font-size: 100px;
   margin: 20px 0 0 0;
-  color: white;
   color: hsla(0deg, 0%, 0%, 0.9);
   height: 140px;
   left: 0;
@@ -149,6 +152,7 @@ footer {
   color: white;
   font-size: 30px;
   padding: 20px;
+  justify-content: center;
   text-align: center;
 }
 
@@ -172,10 +176,10 @@ footer {
 /* .......................................................................index......................................................... */
 #parrafoindex {
   font-size: 18px;
-  text-align: center;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-left: 150px;
   margin-right: 150px;
   background-color: rgba(0, 0, 0, 0.445);
@@ -200,7 +204,6 @@ footer {
 
 #divuno {
   text-align: center;
-  list-style-type: none;
 }
 
 #divdos {
@@ -252,11 +255,6 @@ footer {
     display: initial;
   }
 }
-.listamusica {
-  text-decoration: none;
-  list-style-type: none;
-}
-
 #mainmusica {
   display: grid;
   grid-template-columns: 1fr 1fr;

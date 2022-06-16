@@ -11,11 +11,11 @@ nav ul{
 }
 
 nav{
-    border: solid black 5px;
+    border: map-get($estilos, bordes );
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.726)
-    
+    background-color:map-get($estilos, bg );   
 }
+
 
 .lista{
     text-decoration: none;
@@ -41,10 +41,10 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     margin: 5px 10px;
-    border: solid black 5px;
+    border: map-get($estilos, bordes );
     padding: 10px;
     margin: 30px 0 0 0;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: map-get($estilos, bg );
     
   }  
 
@@ -60,13 +60,9 @@ footer{
 }
 
 .huno{
-    text-align: center;
     font-size: 100px;
     margin: 20px 0 0 0;
-    color: white;
-
     color: hsla(0, 0%, 0%, .9);
-  
   height: 140px;
   left: 0;
   letter-spacing: 5px;
@@ -143,7 +139,7 @@ footer{
     color: white;
     font-size: 30px;
     padding: 20px;
-    text-align: center;
+    @include centro();
 }
 
 .htres{
@@ -171,20 +167,18 @@ footer{
 
 #parrafoindex{
     font-size: 18px;
-    text-align: center;
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
+    @include centro();
     margin-left: 150px;
     margin-right: 150px;   
     background-color: rgba(0, 0, 0, 0.445);
-    border: solid black 5px;   
+    border: map-get($estilos, bordes );   
 }
 
 .img{
    padding: 25px;
-   justify-content: center;
-   text-align: center;
+   @include centro();
   
 }
 
@@ -193,14 +187,14 @@ footer{
     flex-direction: row;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.445);
-    border: solid black 5px;
+    border: map-get($estilos, bordes );
     margin-left: 600px;
     margin-right: 600px;
 }
 
 #divuno{
     text-align: center;
-    list-style-type: none;
+    @extend %listanada;
     
     
 }
@@ -258,8 +252,7 @@ footer{
    
 
 .listamusica{
-    text-decoration: none;
-    list-style-type: none;
+    @extend %listanada;
 }
 
 #mainmusica{
