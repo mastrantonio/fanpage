@@ -1,0 +1,178 @@
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 27px;
+    }
+
+    .huno{
+     font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .huno{
+        font-size: 65px;
+    }
+}
+     
+  
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main {
+
+        section {
+            #video {
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+
+        section {
+            #video {
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    main{display: initial;}
+ 
+    
+    main{
+     section{
+         
+     }
+ 
+     #sectionindex{
+         
+             margin-left: 100px;
+             margin-right: 100px;
+            
+     }
+     section{
+         
+         
+     }
+ }
+ 
+    
+ }
+ 
+@media screen and (max-width: 480px) {
+    
+    
+    .img{
+        display: none;
+        
+     }
+ 
+     #imgdos{
+         display: initial;
+         padding: 20px;
+     }
+   
+    
+    main{
+        section{
+            #parrafoindex{
+                padding: 10px 20px 10px 20px;
+                margin: 15px;
+            }
+        }
+
+        #sectionindex{
+            margin: 0;
+        }
+        section{
+            
+            
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+   
+
+@media screen and (max-width: 768px){
+    #divmusica{
+        grid-area: divuno;
+
+    }
+
+    #divmusicados{
+        grid-area: divdos;
+    }
+
+   #mainmusica{ 
+       grid-template-columns:1fr 1fr;
+       grid-template-rows:  1fr ;
+       grid-template-areas: 
+       " divdos divuno";
+    }
+        
+    }
+@media screen and (max-width: 480px) {
+    #divmusica{
+        grid-area: divuno;
+    }
+
+    #divmusicados{
+        grid-area: divdos;
+    }
+
+   #mainmusica{ 
+       grid-template-columns:1fr ;
+       grid-template-rows: 1fr 1fr;
+       grid-template-areas: 
+       "divuno"
+       "divdos";
+       height: 3100px;
+       width: 900px;
+        }
+        
+  }
+
+
+

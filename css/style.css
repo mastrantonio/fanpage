@@ -1,8 +1,104 @@
-.listamusica, #divuno {
+#divuno {
   text-decoration: none;
   list-style-type: none;
 }
 
+* {
+  padding: 0%;
+  margin: 0;
+}
+
+body {
+  background-image: url(https://altovolumen.com/wp-content/uploads/2020/05/mejorando-tu-estudio-casero-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body nav {
+  border: solid black 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+body nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 5px 10px;
+}
+body nav ul .liscale:hover {
+  transform: scale(1.5, 1.5);
+}
+body nav ul li .lista {
+  text-decoration: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 5px 10px;
+  color: rgb(224, 224, 224);
+}
+body h1 {
+  font-size: 100px;
+  margin: 20px 0 0 0;
+  color: hsla(0deg, 0%, 0%, 0.9);
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 5px 10px;
+  border: solid black 5px;
+  padding: 10px;
+  margin: 30px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+body footer .footer {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 0px 5px;
+}
+body footer .footer:hover {
+  transform: scale(1.5, 1.5);
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsl(180deg, 100%, 50%), -3px -3px 0 hsl(180deg, 100%, 50%), -2px -2px 0 hsl(180deg, 100%, 50%), -1px -1px 0 hsl(180deg, 100%, 50%), 4px 4px 0 hsl(0deg, 100%, 50%), 3px 3px 0 hsl(0deg, 100%, 50%), 2px 2px 0 hsl(0deg, 100%, 50%), 1px 1px 0 hsl(0deg, 100%, 50%);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsl(0deg, 100%, 50%), -3px 3px 0 hsl(0deg, 100%, 50%), -2px 2px 0 hsl(0deg, 100%, 50%), -1px 1px 0 hsl(0deg, 100%, 50%), 4px -4px 0 hsl(180deg, 100%, 50%), 3px -3px 0 hsl(180deg, 100%, 50%), 2px -2px 0 hsl(180deg, 100%, 50%), 1px -1px 0 hsl(180deg, 100%, 50%);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsl(180deg, 100%, 50%), 3px 3px 0 hsl(180deg, 100%, 50%), 2px 2px 0 hsl(180deg, 100%, 50%), 1px 1px 0 hsl(180deg, 100%, 50%), -4px -4px 0 hsl(0deg, 100%, 50%), -3px -3px 0 hsl(0deg, 100%, 50%), -2px -2px 0 hsl(0deg, 100%, 50%), -1px -1px 0 hsl(0deg, 100%, 50%);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
+  }
+}
 main table {
   display: flex;
   justify-content: center;
@@ -47,134 +143,8 @@ main section h3 {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  #video {
-    width: 600px;
-  }
-}
-@media screen and (max-width: 480px) {
-  #video {
-    width: 400px;
-  }
-}
-* {
-  padding: 0%;
-  margin: 0;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
-  margin: 5px 10px;
-}
-
-nav {
-  border: solid black 5px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.726);
-}
-
-.lista {
-  text-decoration: none;
-  font-size: 25px;
-  margin: 0;
-  padding: 5px 10px;
-  color: rgb(224, 224, 224);
-}
-
-.liscale:hover {
-  transform: scale(1.5, 1.5);
-}
-
-body {
-  background-image: url(https://altovolumen.com/wp-content/uploads/2020/05/mejorando-tu-estudio-casero-1.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 5px 10px;
-  border: solid black 5px;
-  padding: 10px;
-  margin: 30px 0 0 0;
-  background-color: rgba(0, 0, 0, 0.726);
-}
-
-.footer {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  padding: 0px 5px;
-}
-
-.footer:hover {
-  transform: scale(1.5, 1.5);
-}
-
-.huno {
-  font-size: 100px;
-  margin: 20px 0 0 0;
-  color: hsla(0deg, 0%, 0%, 0.9);
-  height: 140px;
-  left: 0;
-  letter-spacing: 5px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  animation: move linear 2000ms infinite;
-}
-
-@keyframes move {
-  0% {
-    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
-  }
-  25% {
-    text-shadow: -4px -4px 0 hsl(180deg, 100%, 50%), -3px -3px 0 hsl(180deg, 100%, 50%), -2px -2px 0 hsl(180deg, 100%, 50%), -1px -1px 0 hsl(180deg, 100%, 50%), 4px 4px 0 hsl(0deg, 100%, 50%), 3px 3px 0 hsl(0deg, 100%, 50%), 2px 2px 0 hsl(0deg, 100%, 50%), 1px 1px 0 hsl(0deg, 100%, 50%);
-  }
-  50% {
-    text-shadow: -4px 4px 0 hsl(0deg, 100%, 50%), -3px 3px 0 hsl(0deg, 100%, 50%), -2px 2px 0 hsl(0deg, 100%, 50%), -1px 1px 0 hsl(0deg, 100%, 50%), 4px -4px 0 hsl(180deg, 100%, 50%), 3px -3px 0 hsl(180deg, 100%, 50%), 2px -2px 0 hsl(180deg, 100%, 50%), 1px -1px 0 hsl(180deg, 100%, 50%);
-  }
-  75% {
-    text-shadow: 4px 4px 0 hsl(180deg, 100%, 50%), 3px 3px 0 hsl(180deg, 100%, 50%), 2px 2px 0 hsl(180deg, 100%, 50%), 1px 1px 0 hsl(180deg, 100%, 50%), -4px -4px 0 hsl(0deg, 100%, 50%), -3px -3px 0 hsl(0deg, 100%, 50%), -2px -2px 0 hsl(0deg, 100%, 50%), -1px -1px 0 hsl(0deg, 100%, 50%);
-  }
-  100% {
-    text-shadow: 4px -4px 0 hsl(0deg, 100%, 50%), 3px -3px 0 hsl(0deg, 100%, 50%), 2px -2px 0 hsl(0deg, 100%, 50%), 1px -1px 0 hsl(0deg, 100%, 50%), -4px 4px 0 hsl(180deg, 100%, 50%), -3px 3px 0 hsl(180deg, 100%, 50%), -2px 2px 0 hsl(180deg, 100%, 50%), -1px 1px 0 hsl(180deg, 100%, 50%);
-  }
-}
-.hdos {
-  color: white;
-  font-size: 30px;
-  padding: 20px;
-  justify-content: center;
-  text-align: center;
-}
-
-.htres {
-  color: white;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 480px) {
-  .hdos {
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .hdos {
-    font-size: 27px;
-  }
-}
 /* .......................................................................index......................................................... */
-#parrafoindex {
+main section #parrafoindex {
   font-size: 18px;
   color: rgb(255, 255, 255);
   display: flex;
@@ -185,6 +155,29 @@ footer {
   background-color: rgba(0, 0, 0, 0.445);
   border: solid black 5px;
 }
+main #sectionindex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.445);
+  border: solid black 5px;
+  margin: 0 500px 0 500px;
+}
+main section div ul li .links:hover {
+  color: rgb(0, 255, 255);
+}
+main section div ul li .lilinks:hover {
+  transform: scale(1.5, 1.5);
+}
+main section div #divdos {
+  text-align: center;
+}
+main section div ul li .links:hover {
+  color: rgb(0, 255, 255);
+}
+main section div ul li .lilinks:hover {
+  transform: scale(1.5, 1.5);
+}
 
 .img {
   padding: 25px;
@@ -192,14 +185,8 @@ footer {
   text-align: center;
 }
 
-#sectionindex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.445);
-  border: solid black 5px;
-  margin-left: 600px;
-  margin-right: 600px;
+#imgdos {
+  display: none;
 }
 
 #divuno {
@@ -220,27 +207,68 @@ footer {
   color: rgb(55, 158, 255);
 }
 
-#imgdos {
-  display: none;
+body #mainmusica {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
-
-.links:hover {
-  color: rgb(0, 255, 255);
+body main div .album {
+  padding: 10px;
 }
-
-.lilinks:hover {
-  transform: scale(1.5, 1.5);
+body main div .olmusica {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
 }
-
+body main .divgaleria {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+body main h2 {
+  margin-top: 30px;
+}
 @media screen and (max-width: 480px) {
+  h2 {
+    font-size: 27px;
+  }
+
+  .huno {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .huno {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main section #video {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main section #video {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
   main {
     display: initial;
   }
 
-  #parrafoindex {
-    padding: 10px 25px 10px 25px;
+  main #sectionindex {
+    margin-left: 100px;
+    margin-right: 100px;
   }
-
+}
+@media screen and (max-width: 480px) {
   .img {
     display: none;
   }
@@ -249,28 +277,15 @@ footer {
     display: initial;
     padding: 20px;
   }
-}
-@media screen and (max-width: 768px) {
-  main {
-    display: initial;
+
+  main section #parrafoindex {
+    padding: 10px 20px 10px 20px;
+    margin: 15px;
+  }
+  main #sectionindex {
+    margin: 0;
   }
 }
-#mainmusica {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.olmusica {
-  color: white;
-  font-size: 20px;
-  padding: 30px;
-}
-
-.album {
-  padding: 30px;
-}
-
 @media screen and (max-width: 768px) {
   #divmusica {
     grid-area: divuno;
@@ -300,13 +315,8 @@ footer {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "divuno" "divdos";
     height: 3100px;
+    width: 900px;
   }
-}
-/* ......................................................................galeria............................................................................ */
-.divgaleria {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

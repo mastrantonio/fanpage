@@ -1,77 +1,417 @@
-main{
-    
-    table{
-        
+* {
+    padding: 0%;
+    margin: 0;
+}
+
+
+
+body {
+    background-image: url(https://altovolumen.com/wp-content/uploads/2020/05/mejorando-tu-estudio-casero-1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav {
+        border: map-get($estilos, bordes);
+        padding: 10px;
+        background-color: map-get($estilos, bg);
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style-type: none;
+            margin: 5px 10px;
+
+            .liscale:hover {
+                transform: scale(1.5, 1.5);
+            }
+
+            li {
+
+
+                .lista {
+                    text-decoration: none;
+                    font-size: 25px;
+                    margin: 0;
+                    padding: 5px 10px;
+                    color: rgb(224, 224, 224);
+                }
+
+
+            }
+        }
+    }
+
+    h1 {
+        font-size:100px;
+        margin: 20px 0 0 0;
+        color: hsla(0, 0%, 0%, .9);
+        height: 140px;
+        left: 0;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        animation: move linear 2000ms infinite;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px 10px;
+        border: map-get($estilos, bordes);
+        padding: 10px;
+        margin: 30px 0 0 0;
+        background-color: map-get($estilos, bg);
+
+
+        .footer {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 0px 5px;
+        }
+
+        .footer:hover {
+            transform: scale(1.5, 1.5);
+        }
+    }
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    @include centro();
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+@keyframes move {
+    0% {
+        text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    25% {
+        text-shadow:
+            -4px -4px 0 hsla(180, 100%, 50%, 1),
+            -3px -3px 0 hsla(180, 100%, 50%, 1),
+            -2px -2px 0 hsla(180, 100%, 50%, 1),
+            -1px -1px 0 hsla(180, 100%, 50%, 1),
+            4px 4px 0 hsla(0, 100%, 50%, 1),
+            3px 3px 0 hsla(0, 100%, 50%, 1),
+            2px 2px 0 hsla(0, 100%, 50%, 1),
+            1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+
+    50% {
+        text-shadow:
+            -4px 4px 0 hsla(0, 100%, 50%, 1),
+            -3px 3px 0 hsla(0, 100%, 50%, 1),
+            -2px 2px 0 hsla(0, 100%, 50%, 1),
+            -1px 1px 0 hsla(0, 100%, 50%, 1),
+            4px -4px 0 hsla(180, 100%, 50%, 1),
+            3px -3px 0 hsla(180, 100%, 50%, 1),
+            2px -2px 0 hsla(180, 100%, 50%, 1),
+            1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+
+    75% {
+        text-shadow:
+            4px 4px 0 hsla(180, 100%, 50%, 1),
+            3px 3px 0 hsla(180, 100%, 50%, 1),
+            2px 2px 0 hsla(180, 100%, 50%, 1),
+            1px 1px 0 hsla(180, 100%, 50%, 1),
+            -4px -4px 0 hsla(0, 100%, 50%, 1),
+            -3px -3px 0 hsla(0, 100%, 50%, 1),
+            -2px -2px 0 hsla(0, 100%, 50%, 1),
+            -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+
+    100% {
+        text-shadow:
+            4px -4px 0 hsla(0, 100%, 50%, 1),
+            3px -3px 0 hsla(0, 100%, 50%, 1),
+            2px -2px 0 hsla(0, 100%, 50%, 1),
+            1px -1px 0 hsla(0, 100%, 50%, 1),
+            -4px 4px 0 hsla(180, 100%, 50%, 1),
+            -3px 3px 0 hsla(180, 100%, 50%, 1),
+            -2px 2px 0 hsla(180, 100%, 50%, 1),
+            -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+
+
+
+
+
+
+main {
+
+    table {
+
         display: flex;
         justify-content: center;
         position: relative;
         top: 20px;
-        
-        .coluno{
-            background-image: linear-gradient(to right, $color-principal , $color-secundario);    
+
+        .coluno {
+            background-image: linear-gradient(to right, $color-principal , $color-secundario);
         }
-        .coldos{
+
+        .coldos {
             background-color: $color-secundario;
         }
-        .coltres{
+
+        .coltres {
             background-image: linear-gradient(to left, $color-principal , $color-secundario);
         }
-        tr{
-            th{
+
+        tr {
+            th {
                 border: 5px solid black;
-                padding: 5px 20px 5px 20px ;
+                padding: 5px 20px 5px 20px;
                 color: white;
                 font-size: large;
             }
-            
-           td{
+
+            td {
                 border: 5px solid black;
-                padding: 5px 20px 5px 20px ;
+                padding: 5px 20px 5px 20px;
                 color: white;
-                font-size: large; 
+                font-size: large;
             }
 
         }
-        
+
     }
-    section{
-        #sectionrec{
+
+    section {
+        #sectionrec {
             margin: 50px 0 0 0;
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        #video{
+
+        #video {
             justify-content: center;
             width: 800px;
         }
-        
-        #img{
+
+        #img {
             text-align: center;
-            
+
         }
 
-       
-
-        h3{
+        h3 {
             text-align: center;
         }
-        
+
     }
 }
 
 
 
 
-@media screen and (max-width: 768px){
-    #video{
-        width: 600px;
+
+
+/* .......................................................................index......................................................... */
+
+
+main {
+    div {
+
+        img {}
+    }
+
+    div {
+
+        img {}
+    }
+
+    section {
+        #parrafoindex {
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            @include centro();
+            margin-left: 150px;
+            margin-right: 150px;
+            background-color: rgba(0, 0, 0, 0.445);
+            border: map-get($estilos, bordes);
+        }
+    
+        p {}
+    }
+
+    
+    #sectionindex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.445);
+        border: map-get($estilos, bordes);
+        margin: 0 500px 0 500px;
+        
+    }
+
+    section {
+
+        div {
+            
+            h2 {}
+
+            ul {
+
+                li {.links:hover{
+                    color: rgb(0, 255, 255);
+                }
+                .lilinks:hover{
+                    transform: scale(1.5,1.5);
+                }
+            }
+            }
+        }
+
+        div {
+            #divdos {
+                text-align: center;
+            }
+
+            h2 {} 
+
+            ul {
+
+                li {
+                    .links:hover{
+                        color: rgb(0, 255, 255);
+                    }
+                    .lilinks:hover{
+                        transform: scale(1.5,1.5);
+                    } 
+                }
+            }
+        }
+    }
 }
+
+.img {
+    padding: 25px;
+    @include centro();
 }
-@media screen and (max-width: 480px){
-    #video{
-        width: 400px;
+
+#imgdos {
+    display: none;
+}
+
+
+#divuno{
+    text-align: center;
+    @extend %listanada;
+    
+    
+}
+
+#divdos{
+    text-align: center;
+    
+}
+
+.ulindex{
+    list-style-type: none;
+    font-size: 18px;
+}
+.ulindex li a{
+    text-decoration: none;
+    color:rgb(55, 158, 255) ;
+}
+
+
+
+
+body{
+    #mainmusica{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:  1fr;
+    }
+main{
+    
+    div{
+        .album{
+            padding: 10px;
+        }
+        h2{
+
+        }
+
+        .olmusica{
+            color: white;
+            font-size: 20px;
+            padding: 30px;    
+        }
+        ol{
+            
+            li{
+                
+            }
+        }
+    }
+
+    div{
+        h2{
+
+        }
+
+        ol{
+            
+            li{
+                
+            }
+        }
+    }
 }
 }
 
 
+body{
+    main{
+        .divgaleria{
+            display: flex;
+            justify-content: space-evenly ;
+            padding: 40px;
+            
+        }
+        div{
+            
+        }
+        h2{
+         margin-top: 30px;
+        }
+        div{
+
+        }
+    }
+}
